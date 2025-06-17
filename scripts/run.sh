@@ -1,6 +1,7 @@
 #!/bin/sh
 
 xrdb merge ~/.Xresources
+# picom -b &
 feh --bg-fill ~/Pictures/wallpaper/scenery_tower.jpg &
 dunst &
 xset r rate 200 50 &

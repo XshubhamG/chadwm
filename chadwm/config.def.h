@@ -183,6 +183,7 @@ static const Key keys[] = {
      SHCMD("scrot -f ~/Pictures/Screenshots/$(date +%d-%m-%Y)-Full.png ")},
     {MODKEY | ShiftMask, XK_s, spawn,
      SHCMD("scrot -s -f ~/Pictures/Screenshots/$(date +%Y-%m-%d).png")},
+    {ALTKEY, XK_s, spawn, SHCMD("~/.local/bin/screenshot.sh")},
 
     {MODKEY, XK_r, spawn,
      SHCMD("rofi -show drun -theme themes/application.rasi")},
