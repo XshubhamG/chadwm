@@ -1,8 +1,9 @@
 #!/bin/sh
 
 xrdb merge ~/.Xresources
-# picom -b &
+picom -b &
 /usr/lib/polkit-kde-authentication-agent-1 &
+/usr/lib/gpaste/gpaste-daemon &
 udiskie -2 &
 feh --bg-fill ~/Pictures/wallpaper/scenery_tower.jpg &
 dunst &

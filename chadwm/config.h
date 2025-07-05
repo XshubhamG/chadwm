@@ -88,7 +88,7 @@ static const char *colors[][3] = {
 };
 
 /* tagging */
-static char *tags[] = {" 󰄛 ", "  ", "  ", " 󰓇 ", "  ", "  "};
+static char *tags[] = {" 󰄛 ", "  ", "  ", "  ", " 󰓇 ", "  "};
 
 static const int tagschemes[] = {SchemeTag1, SchemeTag2, SchemeTag3,
                                  SchemeTag4, SchemeTag5, SchemeTag6};
@@ -115,12 +115,13 @@ static const Rule rules[] = {
     {"qt6ct", NULL, NULL, NULL, 1 << 4, 1, 1, -1},    /* qt6ct */
 
     {"kitty", NULL, NULL, NULL, 1 << 0, 0, 0, -1},
+    {"wezterm", NULL, NULL, NULL, 1 << 0, 0, 0, -1},
     {"St", NULL, NULL, NULL, 0, 0, 0, -1},
     {"Brave-browser", NULL, NULL, NULL, 1 << 1, 0, 0, -1},
     {"zen", NULL, NULL, NULL, 1 << 1, 0, 0, -1},
     {"Cursor", NULL, NULL, NULL, 1 << 2, 0, 0, -1},
-    {"spotify", NULL, NULL, NULL, 1 << 3, 0, 0, -1},
-    {"Thunar", NULL, NULL, NULL, 1 << 5, 0, 0, -1},
+    {"spotify", NULL, NULL, NULL, 1 << 4, 0, 0, -1},
+    {"Thunar", NULL, NULL, NULL, 1 << 3, 0, 0, -1},
 
 };
 
@@ -190,7 +191,7 @@ static const Key keys[] = {
     {ALTKEY, XK_e, spawn, SHCMD("rofi -show emoji -theme themes/emoji.rasi")},
 
     {MODKEY | ShiftMask, XK_l, spawn, SHCMD("betterlockscreen -l dimblur")},
-    {MODKEY, XK_Return, spawn, SHCMD("kitty")},
+    {MODKEY, XK_Return, spawn, SHCMD("wezterm")},
     {MODKEY, XK_e, spawn, SHCMD("thunar")},
     {MODKEY, XK_b, spawn, SHCMD("brave")},
     {MODKEY, XK_z, spawn, SHCMD("zen-browser")},
