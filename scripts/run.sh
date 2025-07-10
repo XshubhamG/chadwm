@@ -5,7 +5,8 @@ picom -b &
 /usr/lib/polkit-kde-authentication-agent-1 &
 /usr/lib/gpaste/gpaste-daemon &
 udiskie -2 &
-feh --bg-fill ~/Pictures/wallpaper/scenery_tower.jpg &
+redshift -P -0 5000 &
+dash ~/.fehbg &
 dunst &
 xset r rate 200 50 &
 
