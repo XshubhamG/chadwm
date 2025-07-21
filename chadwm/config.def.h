@@ -30,7 +30,7 @@ static const unsigned int systrayspacing = 2; /* systray spacing */
 static const int systraypinningfailfirst = 1;
 static const int showsystray = 1; /* 0 means no systray */
 
-static const int showbar = 1; /* 0 means no bar */
+static const int showbar = 0; /* 0 means no bar */
 static const int showtab = showtab_auto;
 static const int toptab = 1; /* 0 means bottom tab */
 // 1 means the bar will float,0 means the bar have padding
